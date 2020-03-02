@@ -1,0 +1,55 @@
+.player {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    background: black;
+    height: 62px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    &__track {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    &__left {
+        background: #F51E38;
+        padding-top: 12px;
+        padding-left: 24px;
+        padding-bottom: 12px;
+        padding-right: 17px;
+        color: white;
+    }
+
+    &__cover {
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-right: 8px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__songname {
+        font-size: 12px;
+    }
+
+    &__songartist {
+        font-size: 10px;
+        line-height: 12px;
+        color: #F79DA8;
+    }
+
+    &__burger {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}

@@ -6,11 +6,11 @@
   font-family: sans-serif;
 }
 
-.grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 5fr;
-      grid-template-columns: 1fr 5fr;
+main {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(244, 249, 255, 0.0001)), color-stop(26.23%, #F4F9FF));
+  background: linear-gradient(180deg, rgba(244, 249, 255, 0.0001) 0%, #F4F9FF 26.23%);
+  padding-bottom: 100px;
+  overflow: hidden;
 }
 
 .bar {
@@ -275,6 +275,51 @@
           align-items: center;
 }
 
+.card {
+  width: 112px;
+  margin-right: 20px;
+  -ms-flex-negative: unset;
+      flex-shrink: unset;
+}
+
+.card__cover {
+  height: 112px;
+  overflow: hidden;
+  display: block;
+  width: 112px;
+}
+
+.card__cover img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card__name {
+  font-size: 12px;
+  line-height: 16px;
+  color: #0F1E36;
+  padding-top: 8px;
+  padding-bottom: 4px;
+  max-width: 112px;
+}
+
+.card__author {
+  font-size: 10px;
+  line-height: 14px;
+  color: #0F1E36;
+  mix-blend-mode: normal;
+  opacity: 0.48;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 5fr;
+      grid-template-columns: 1fr 5fr;
+}
+
 .tracks {
   padding: 24px;
 }
@@ -337,51 +382,6 @@
 
 .tracks__col--bold {
   opacity: 1;
-}
-
-main {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(244, 249, 255, 0.0001)), color-stop(26.23%, #F4F9FF));
-  background: linear-gradient(180deg, rgba(244, 249, 255, 0.0001) 0%, #F4F9FF 26.23%);
-  padding-bottom: 100px;
-  overflow: hidden;
-}
-
-.card {
-  width: 112px;
-  margin-right: 20px;
-  -ms-flex-negative: unset;
-      flex-shrink: unset;
-}
-
-.card__cover {
-  height: 112px;
-  overflow: hidden;
-  display: block;
-  width: 112px;
-}
-
-.card__cover img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.card__name {
-  font-size: 12px;
-  line-height: 16px;
-  color: #0F1E36;
-  padding-top: 8px;
-  padding-bottom: 4px;
-  max-width: 112px;
-}
-
-.card__author {
-  font-size: 10px;
-  line-height: 14px;
-  color: #0F1E36;
-  mix-blend-mode: normal;
-  opacity: 0.48;
 }
 
 .player {

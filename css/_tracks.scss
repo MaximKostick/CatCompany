@@ -1,0 +1,60 @@
+.tracks {
+    padding: 24px;
+
+    &__title {
+        padding-bottom: 13px;
+        font-size: 16px;
+        line-height: 22px;
+        color: #0F1E36;
+        padding-top: 13px;
+
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+        width: 100%;
+
+        // &::-webkit-scrollbar {
+        //    display: none;
+        // }
+
+        li {
+           display: inline-block;
+        }
+    }
+
+    &__option {
+       display: grid;
+       grid-template-columns: repeat(9,1fr);
+       
+        &:hover {
+            background: white;
+            cursor: pointer;
+         }
+
+         &--top {
+             &:hover {
+                background: linear-gradient(180deg, rgba(244, 249, 255, 0.0001) 0%, #F4F9FF 26.23%);
+             }
+         }
+    }
+
+    &__col {
+        height: 39px;
+        font-size: 12px;
+        line-height: 16px;
+        color: #0F1E36;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+        transition: 0.5s;
+        display: flex;
+        align-items: center;
+
+        &--bold {
+            opacity: 1;
+        }  
+    }
+}

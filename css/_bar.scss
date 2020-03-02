@@ -1,0 +1,47 @@
+.bar {
+    padding: 25px;
+    
+    &__logo--img {
+        width: 50px;
+    }
+
+    &__top {
+        list-style: none;
+       
+
+        &--first {
+            padding-top: 20px;
+        }
+    }
+
+    &__link {
+        display: flex;
+        text-decoration: none;
+        padding-bottom: 24px;
+        color: #0F1E36;
+        opacity: 0.5;
+        padding-left: 24px;
+        transition: 0.5s;
+        font-size: 12px;
+        line-height: 16px;
+        position: relative;
+
+        &:hover {
+            opacity: 1;
+            color: $main-color;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &__title {
+        font-size: 14px;
+        line-height: 16px;
+        padding-bottom: 16px;
+    }
+
+}

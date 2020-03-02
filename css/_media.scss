@@ -1,0 +1,67 @@
+@media screen and (max-width:775px) {
+    .header {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2,70px);
+        grid-template-areas: "list profile"
+                                "form form";
+
+        &__form {
+            grid-area: form;
+        }
+
+        &__list {
+            grid-area: list;
+        }
+
+        &__profile {
+            grid-area: profile;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        &__input {
+            width: 100%;
+        }
+    }
+
+    .banner {
+        background-image: none;
+        height: auto;
+        padding: 25px 53px;
+    }
+
+    .player__burger {
+        display: none;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bar {
+        display: none;
+    }
+
+    .header {
+        grid-template-areas: "menu profile"
+                            "list list"
+                            "form form";
+        &__menu {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+            font-size: 30px;
+            opacity: 0.5;
+            grid-area: menu;
+        }
+
+        &__block {
+            img{
+                top: 0;
+            }
+        }
+    }
+}
